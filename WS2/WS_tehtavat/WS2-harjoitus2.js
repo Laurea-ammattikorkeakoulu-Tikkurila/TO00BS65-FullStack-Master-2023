@@ -1,7 +1,7 @@
 var fs = require("fs");
 
 // Luetaan tiedoston sisältö muuttujiin
-var data1 = fs.readFileSync("uusiFile.txt");
+var data1 = fs.readFileSync("teksti.txt");
 // Tulostetaan tiedoston sisältö ruudulle
 console.log("Luettu tiedostosta 1:");
 console.log(data1.toString());

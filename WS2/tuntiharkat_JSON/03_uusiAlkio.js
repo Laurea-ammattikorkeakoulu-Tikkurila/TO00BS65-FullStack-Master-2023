@@ -35,4 +35,5 @@ var data = JSON.stringify(json, "", 1); // Parametreilla "" ja 1 saadaan kaunis 
 
 // Kirjoitetaan lopuksi tiedosto levylle JSON-muodossa, eli sellaisenaan
 fs.writeFileSync("./data1.json", data);
-console.log(json[0].name);
+console.log("Name: " + json[0].name + " age: " + json[json.length - 1].age);
+//console.log(json[json.length - 1].age);
