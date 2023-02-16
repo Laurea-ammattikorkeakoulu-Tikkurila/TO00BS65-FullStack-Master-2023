@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     );
 
     var data =
-        "<table border='5'><tr><td>Jari</td><td>Toka Jari</td></tr><tr><td>Kolmas Jari</td><td>Neljäs Jari</td></tr></table>";
+        "<table border='5'><tr><td>Seppo</td><td>Toka Seppo</td></tr><tr><td>Kolmas Jari</td><td>Neljäs Jari</td></tr></table>";
     res.write(data);
 
     res.end("<strong>This is the end</strong>"); //end the response
