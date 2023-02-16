@@ -1,0 +1,18 @@
+
+Uusi teksti
+
+Tämän tiedoston teksti on haettu tiedostosta uusiFIle.txt...
+
+Terveisin, 
+
+Jari Kovis
+
+
+Toinen uusi teksti
+
+Tämän tiedoston teksti on haettu tiedostosta uusiFIle.txt...
+
+Terveisin, 
+
+Jari Kovis
+
