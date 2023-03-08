@@ -1,6 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var app = express();
+const port = 3006;
 
 // Serve static files from the "public" directory
 app.use(express.static('/public'));
@@ -104,7 +105,6 @@ app.post("/adduser", function (req, res) {
   );
 });
 
-
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+app.listen(port, function () {
+  console.log('Example app listening on port: ' + port);
 });

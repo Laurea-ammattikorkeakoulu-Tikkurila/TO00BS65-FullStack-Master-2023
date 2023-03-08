@@ -1,6 +1,7 @@
 var express = require("express");
 var fs = require("fs");
 var app = express();
+const port = 3005;
 
 // Require the module required for using form data
 var bodyParser = require("body-parser");
@@ -28,7 +29,7 @@ app.post("/kirjaudu", function (req, res) {
     if (email === "onni@sci.fi" && pass === "opiskelija") {
         res.redirect("/userpage");
     }
-    res.send("Lähetit lomakkeen! Email: " + email + " Salis: " + pass);
+    res.send("Antamasi käyttäjätunnus tai salasana oli väärä!");
 });
 
 // Uusi reitti sisäänkirjautuneelle käyttäjälle.
@@ -40,8 +41,6 @@ app.get("*", function (req, res) {
     res.send("Cant find the requested page", 404);
 });
 
-
-
-app.listen(8081, function () {
-    console.log("Example app listening on port 8081!");
+app.listen(port, function () {
+    console.log("Example app listening on port: " + port);
 });

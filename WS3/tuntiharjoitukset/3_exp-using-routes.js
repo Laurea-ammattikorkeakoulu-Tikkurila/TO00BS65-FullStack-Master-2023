@@ -1,6 +1,7 @@
 
 var express = require('express');
 var app = express();
+const port = 3003;
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
@@ -15,11 +16,10 @@ app.get('/add', function (req, res) {
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)
-app.get('*', function(req, res){
+app.get('*', function (req, res) {
   res.send('Cant find the requested page', 404);
 });
 
-
-app.listen(8081, function () {
-  console.log('Example app listening on port 8081!');
+app.listen(port, function () {
+  console.log('Example app listening on port: ' + port);
 });

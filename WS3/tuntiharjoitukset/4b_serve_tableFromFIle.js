@@ -1,11 +1,11 @@
 var express = require('express');
 var fs = require('fs');
 var app = express();
+const port = 30044
 
 app.get('/', function (req, res) {
    res.sendFile(__dirname + '/public/index.html');
    console.log("Polku: " + __dirname);
-
 });
 
 app.get('/details', function (req, res) {
@@ -25,6 +25,6 @@ app.get('/details', function (req, res) {
    res.send(results);
 });
 
-app.listen(8080, function () {
-   console.log('Example app listening on port 8080!');
+app.listen(port, function () {
+   console.log('Example app listening on port: ' + port);
 });
