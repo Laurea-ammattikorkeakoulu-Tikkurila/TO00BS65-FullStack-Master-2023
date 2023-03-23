@@ -1,0 +1,15 @@
+<!-- Tiedoston nimi on users.ejs -->
+<table>
+    <% users.forEach(function(user){ %>
+        <% if (user.name !="John" ) { %>
+            <tr>
+                <td>
+                    <%= user.name %>
+                </td>
+                <td>
+                    <%= user.age %>
+                </td>
+            </tr>
+            <% } %>
+                <% })%>
+</table>

@@ -1,0 +1,19 @@
+<!-- Tiedoston nimi on ostokset.ejs -->
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>
+        <%= otsikko %>
+    </h1>
+    <ul>
+        <!-- luodaan silmukka joka käy läpi taulu-muuttujan sisällön -->
+        <% for (var i=0; i < taulu.length; i++){ %>
+            <li>
+                <%= taulu[i] %>
+            </li>
+            <% } %>
+    </ul>
+</body>
+
+</html>
