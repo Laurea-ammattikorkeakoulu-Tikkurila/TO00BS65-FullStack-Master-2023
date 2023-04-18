@@ -19,7 +19,7 @@ async function main() {
     //Luodaan uusi  muuttuja, jokna arvo haetaan modules/date.js tiedostosta
     const datee = date.getDate();
     /* Luodaan uusi kitten olio ja tulostetaan sen nimi konsoliin */
-    const silence = new Kitten({ name: 'Petteri', date: datee });
+    const silence = new Kitten({ name: 'PetteriPuupää', date: datee });
     await silence.save();
 
     /* search for all documents with a name property that begins with "Petteri" and returns the result as an array of kittens*/
